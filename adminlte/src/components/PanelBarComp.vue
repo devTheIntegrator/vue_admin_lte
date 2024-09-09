@@ -45,9 +45,8 @@ import { RouterLink } from 'vue-router';
 
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="index3.html" class="brand-link">
-            <img src="../assets/icons/Logo.png" alt="Colour Logo" class="brand-image img-circle elevation-3"
-                style="opacity: .8">
-            <span class="brand-text font-weight-light">Colour Artisan: Admin</span>
+            <img src="../assets/icons/Logo.png" alt="Colour Logo" class="brand-image img-circle elevation-3">
+            <span class="brand-text font-weight-light">CRR: Admin</span>
         </a>
 
         <div class="sidebar">
@@ -97,9 +96,9 @@ import { RouterLink } from 'vue-router';
                     <!-- master data configuration menu -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
+                            <i class="nav-icon fas fa-th"></i>
                             <p>
-                                Master Data Configuration
+                                Master Data Config
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -112,43 +111,43 @@ import { RouterLink } from 'vue-router';
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-box-archive nav-icon"></i>
                                     <p>Can Data</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-scale-balanced nav-icon"></i>
                                     <p>Unit of Measurements</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-layer-group nav-icon"></i>
                                     <p>Group & Products</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-palette nav-icon"></i>
                                     <p>Shades</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-dollar-sign nav-icon"></i>
                                     <p>Pricings</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-percent nav-icon"></i>
                                     <p>Discount & VAT</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fa-solid fa-cloud-arrow-up nav-icon"></i>
                                     <p>Import/Export</p>
                                 </a>
                             </li>
@@ -157,7 +156,7 @@ import { RouterLink } from 'vue-router';
                     <!-- machines menu -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-chart-pie"></i>
+                            <i class="nav-icon fa-solid fa-cube"></i>
                             <p>
                                 Machines
                                 <i class="right fas fa-angle-left"></i>
@@ -175,7 +174,7 @@ import { RouterLink } from 'vue-router';
                     <!-- system management menu -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-tree"></i>
+                            <i class="nav-icon fa-solid fa-paste"></i>
                             <p>
                                 System Management
                                 <i class="fas fa-angle-left right"></i>
@@ -193,7 +192,7 @@ import { RouterLink } from 'vue-router';
                     <!-- user & permissions menu -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-edit"></i>
+                            <i class="nav-icon fa-solid fa-tree"></i>
                             <p>
                                 User & Permissions
                                 <i class="fas fa-angle-left right"></i>
@@ -211,7 +210,7 @@ import { RouterLink } from 'vue-router';
                     <!-- history & logs -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-table"></i>
+                            <i class="nav-icon fa-solid fa-pen-to-square"></i>
                             <p>
                                 History & Logs
                                 <i class="fas fa-angle-left right"></i>
@@ -233,7 +232,5 @@ import { RouterLink } from 'vue-router';
 </template>
 
 <script>
-export default {
 
-}
 </script>

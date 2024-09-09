@@ -4,7 +4,10 @@ import PanelBar from "@/components/PanelBarComp.vue";
 
 <template>
   <PanelBar />
-  <router-view />
+  <!-- page content here -->
+  <div class="wrapper">
+    <router-view />
+  </div>
 </template>
 
 <script>
