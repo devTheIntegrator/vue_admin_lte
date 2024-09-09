@@ -1,5 +1,5 @@
 <script setup>
-  import PanelBar from "./components/PanelBarComp.vue";
+import PanelBar from "@/components/PanelBarComp.vue";
 </script>
 
 <template>
