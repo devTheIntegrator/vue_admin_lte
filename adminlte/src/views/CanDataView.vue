@@ -1,3 +1,7 @@
+<script setup>
+    import { RouterLink } from 'vue-router';
+</script>
+
 <template>
     <div class="home">
         <div class="content-wrapper" style="min-height: 796px;">
@@ -5,15 +9,15 @@
                 <div class="container-fiuid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">ยินดีต้อนรับสู่หน้า Database</h1>
+                            <h1 class="m-0">ยินดีต้อนรับสู่หน้า Can Data</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item">
-                                    <a href="#">Dashboard</a>
+                                    <RouterLink to="/dashboard">Dashboard</RouterLink>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    <a href="#">Database</a>
+                                    <RouterLink to="/can-data">Can Data</RouterLink>
                                 </li>
                             </ol>
                         </div>

@@ -23,7 +23,7 @@ const setActiveMenu = (menu) => {
                 </a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <RouterLink to="/dashboard" class="nav-link">Dashboard</RouterLink>
+                <RouterLink to="/" class="nav-link">Dashboard</RouterLink>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -117,16 +117,16 @@ const setActiveMenu = (menu) => {
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'database'}" @click="setActiveMenu('database')">
+                                <RouterLink to="/database" class="nav-link" :class="{'active': activeMenu === 'database'}" @click="setActiveMenu('database')">
                                     <i class="fa-solid fa-database nav-icon"></i>
                                     <p>Database</p>
-                                </a>
+                                </RouterLink>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'can-data'}" @click="setActiveMenu('can-data')">
+                                <RouterLink to="/can-data" class="nav-link" :class="{'active': activeMenu === 'can-data'}" @click="setActiveMenu('can-data')">
                                     <i class="fa-solid fa-box-archive nav-icon"></i>
                                     <p>Can Data</p>
-                                </a>
+                                </RouterLink>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link" :class="{'active': activeMenu === 'unit-of-measurements'}" @click="setActiveMenu('unit-of-measurements')">

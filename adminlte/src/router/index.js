@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/DashboaedView.vue'
-import DashboaedView from '../views/DashboaedView.vue'
+import DashboaedView from '../views/DashboardView.vue'
+import DatabaseView from '@/views/DatabaseView.vue'
+import CanDataView from '@/views/CanDataView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'dashboard',
+    component: DashboaedView
   },
   {
     path: '/about',
@@ -20,6 +21,16 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: DashboaedView
+  },
+  {
+    path: '/database',
+    name: 'database',
+    component: DatabaseView
+  },
+  {
+    path: '/can-data',
+    name: 'can-data',
+    component: CanDataView
   },
 ]
 
