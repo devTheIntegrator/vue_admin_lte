@@ -3,6 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
+    <!-- navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -43,6 +44,7 @@ import { RouterLink } from 'vue-router';
         </ul>
     </nav>
 
+    <!-- sidebar -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="index3.html" class="brand-link">
             <img src="../assets/icons/Logo.png" alt="Colour Logo" class="brand-image img-circle elevation-3">
