@@ -1,5 +1,16 @@
 <script setup>
+
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+
+// สร้าง state สำหรับเมนูที่ active
+const activeMenu = ref('dashboard');
+
+// ฟังก์ชั่นเพื่อเปลี่ยนเมนูที่ active เมื่อคลิก
+const setActiveMenu = (menu) => {
+    activeMenu.value = menu;
+}
+
 </script>
 
 <template>
@@ -78,7 +89,7 @@ import { RouterLink } from 'vue-router';
                     data-accordion="false">
                     <!-- dashboard menu -->
                     <li class="nav-item menu-open">
-                        <a href="#" class="nav-link active">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'dashboard'}" @click="setActiveMenu('dashboard')">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Dashboard
@@ -97,7 +108,7 @@ import { RouterLink } from 'vue-router';
 
                     <!-- master data configuration menu -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'master-data'}" @click="setActiveMenu('master-data')">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
                                 Master Data Config
@@ -106,49 +117,49 @@ import { RouterLink } from 'vue-router';
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'database'}" @click="setActiveMenu('database')">
                                     <i class="fa-solid fa-database nav-icon"></i>
                                     <p>Database</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'can-data'}" @click="setActiveMenu('can-data')">
                                     <i class="fa-solid fa-box-archive nav-icon"></i>
                                     <p>Can Data</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'unit-of-measurements'}" @click="setActiveMenu('unit-of-measurements')">
                                     <i class="fa-solid fa-scale-balanced nav-icon"></i>
                                     <p>Unit of Measurements</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'group-products'}" @click="setActiveMenu('group-products')">
                                     <i class="fa-solid fa-layer-group nav-icon"></i>
                                     <p>Group & Products</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'shades'}" @click="setActiveMenu('shades')">
                                     <i class="fa-solid fa-palette nav-icon"></i>
                                     <p>Shades</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'pricings'}" @click="setActiveMenu('pricings')">
                                     <i class="fa-solid fa-dollar-sign nav-icon"></i>
                                     <p>Pricings</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'discount-vat'}" @click="setActiveMenu('discount-vat')">
                                     <i class="fa-solid fa-percent nav-icon"></i>
                                     <p>Discount & VAT</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" :class="{'active': activeMenu === 'import-export'}" @click="setActiveMenu('import-export')">
                                     <i class="fa-solid fa-cloud-arrow-up nav-icon"></i>
                                     <p>Import/Export</p>
                                 </a>
@@ -157,7 +168,7 @@ import { RouterLink } from 'vue-router';
                     </li>
                     <!-- machines menu -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'machines'}" @click="setActiveMenu('machines')">
                             <i class="nav-icon fa-solid fa-cube"></i>
                             <p>
                                 Machines
@@ -175,7 +186,7 @@ import { RouterLink } from 'vue-router';
                     </li>
                     <!-- system management menu -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'system-management'}" @click="setActiveMenu('system-management')">
                             <i class="nav-icon fa-solid fa-paste"></i>
                             <p>
                                 System Management
@@ -193,7 +204,7 @@ import { RouterLink } from 'vue-router';
                     </li>
                     <!-- user & permissions menu -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'user-permissions'}" @click="setActiveMenu('user-permissions')">
                             <i class="nav-icon fa-solid fa-tree"></i>
                             <p>
                                 User & Permissions
@@ -211,7 +222,7 @@ import { RouterLink } from 'vue-router';
                     </li>
                     <!-- history & logs -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" :class="{'active': activeMenu === 'history-logs'}" @click="setActiveMenu('history-logs')">
                             <i class="nav-icon fa-solid fa-pen-to-square"></i>
                             <p>
                                 History & Logs
@@ -232,7 +243,3 @@ import { RouterLink } from 'vue-router';
         </div>
     </aside>
 </template>
-
-<script>
-
-</script>
